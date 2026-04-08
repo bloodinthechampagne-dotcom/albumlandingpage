@@ -23,6 +23,13 @@
       color: #ccc;
     }
 
+    h3 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
     p {
       margin: 20px 0;
     }
@@ -50,10 +57,27 @@
       border-radius: 8px;
     }
 
-    img {
+    img.hero {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .gallery a img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.05);
     }
 
     .links {
@@ -75,7 +99,7 @@
 
 <body>
 
-<img src="https://i.ibb.co/qL9jpRPQ/FINAL-landscape.jpg">
+<img class="hero" src="https://i.ibb.co/qL9jpRPQ/FINAL-landscape.jpg">
 
 <h2>Self-Titled</h2>
 
@@ -88,7 +112,6 @@ FFO: Belgrado, The Cure, Siouxsie and the Banshees, She Past Away, Joy Division,
 </p>
 
 <div class="embed">
-  <!-- BANDCAMP EMBED -->
   <iframe style="border: 0; width: 100%; height: 120px;"
     src="https://bandcamp.com/EmbeddedPlayer/album=336427402/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
     seamless>
@@ -96,7 +119,6 @@ FFO: Belgrado, The Cure, Siouxsie and the Banshees, She Past Away, Joy Division,
 </div>
 
 <div class="embed">
-  <!-- YOUTUBE EMBED -->
   <iframe width="100%" height="315"
     src="https://www.youtube.com/embed/G_Tr305-jSo"
     frameborder="0"
@@ -109,8 +131,33 @@ An unashamedly gothic collection of songs and poems.
 </p>
 
 <p>
-These 10 songs and poems revel in strangely optimistic melancholy, politicised undercurrents, queer awakenings, and romantic memory.
+It revels in strangely optimistic melancholy, politicised undercurrents, queer awakenings, and romantic memory.
 </p>
+
+<h3>Press Photos</h3>
+
+<p class="center">Band Photos</p>
+<div class="gallery">
+  <a href="https://i.ibb.co/9k04wS72/from-bendigo.jpg" target="_blank">
+    <img src="https://i.ibb.co/9k04wS72/from-bendigo.jpg">
+  </a>
+  <a href="https://i.ibb.co/pBrSJ8jz/35.png" target="_blank">
+    <img src="https://i.ibb.co/pBrSJ8jz/35.png">
+  </a>
+</div>
+
+<p class="center">Album Artwork</p>
+<div class="gallery">
+  <a href="https://i.ibb.co/mVGsvK16/FINAL.jpg" target="_blank">
+    <img src="https://i.ibb.co/mVGsvK16/FINAL.jpg">
+  </a>
+  <a href="https://i.ibb.co/nNffSgHk/FINAL-portrait.jpg" target="_blank">
+    <img src="https://i.ibb.co/nNffSgHk/FINAL-portrait.jpg">
+  </a>
+  <a href="https://i.ibb.co/qL9jpRPQ/FINAL-landscape.jpg" target="_blank">
+    <img src="https://i.ibb.co/qL9jpRPQ/FINAL-landscape.jpg">
+  </a>
+</div>
 
 <div class="links">
   <p>
